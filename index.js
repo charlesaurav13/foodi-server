@@ -14,8 +14,8 @@ app.use(express.json());
 //write down your mongodb online url link in this and also in env file
 mongoose
   .connect(
-    // `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.3mb0mop.mongodb.net/testanywherefood`
-    "mongodb://127.0.0.1:27017/anywhere"
+    `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.3mb0mop.mongodb.net/anywherefood`
+    // "mongodb://127.0.0.1:27017/anywhere"
   )
   .then(console.log("Mongodb connected successfully!"))
   .catch((error) => console.log("Error connecting to MongoDB: " + error));
